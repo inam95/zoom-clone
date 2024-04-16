@@ -1,10 +1,10 @@
 import React, { PropsWithChildren } from "react";
+import StreamVideoProvider from "../../../providers/StreamClientProvider";
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <main>
-      {children}
-      Footer
+      <StreamVideoProvider>{children}</StreamVideoProvider>
     </main>
   );
 };
